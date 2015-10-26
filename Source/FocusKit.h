@@ -18,10 +18,10 @@
 
 #import <UIKit/UIKit.h>
 
-//! Project version number for Temp.
-FOUNDATION_EXPORT double TempVersionNumber;
+//! Project version number for FocusKit.
+FOUNDATION_EXPORT double FocusKitVersionNumber;
 
-//! Project version string for Temp.
-FOUNDATION_EXPORT const unsigned char TempVersionString[];
+//! Project version string for FocusKit.
+FOUNDATION_EXPORT const unsigned char FocusKitVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <Temp/PublicHeader.h>
+// In this header, you should import all the public headers of your framework using statements like #import <FocusKit/PublicHeader.h>
