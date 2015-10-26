@@ -33,14 +33,14 @@ public class TextStorage: NSTextStorage {
 	internal var expression: NSRegularExpression?
 	
 	/**
-		:name:	contentWillProcessEdit
+		:name:	textWillProcessEdit
 	*/
-	internal var contentWillProcessEdit: TextWillProcessEdit?
+	internal var textWillProcessEdit: TextWillProcessEdit?
 	
 	/**
-		:name:	contentDidProcessEdit
+		:name:	textDidProcessEdit
 	*/
-	internal var contentDidProcessEdit: TextDidProcessEdit?
+	internal var textDidProcessEdit: TextDidProcessEdit?
 	
 	/**
 		:name:	init
@@ -70,9 +70,9 @@ public class TextStorage: NSTextStorage {
 	*/
 	public override func processEditing() {
 		let range: NSRange = (string as NSString).paragraphRangeForRange(editedRange)
-		contentWillProcessEdit?(self, string, range)
+		textWillProcessEdit?(self, string, range)
 		expression!.enumerateMatchesInString(string, options: [], range: range) { (result: NSTextCheckingResult?, flags: NSMatchingFlags, stop: UnsafeMutablePointer<ObjCBool>) -> Void in
-			self.contentDidProcessEdit?(self, result, flags, stop)
+			self.textDidProcessEdit?(self, result, flags, stop)
 		}
 		super.processEditing()
 	}
