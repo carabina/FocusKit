@@ -8,7 +8,6 @@ Pod::Spec.new do |s|
     s.authors = { 'GraphKit Inc.' => 'support@graphkit.io' }
     s.source = { :git => 'https://github.com/GraphKit/FocusKit.git', :tag => s.version }
     s.ios.deployment_target = '8.0'
-    s.osx.deployment_target = '10.10'
     s.source_files = 'Source/*.swift'
     s.requires_arc = true
 end
