@@ -13,7 +13,6 @@
 		96E174801BDE99A000A628AC /* TextStorage.swift in Headers */ = {isa = PBXBuildFile; fileRef = 96E1747A1BDE927900A628AC /* TextStorage.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		96E174811BDE99A000A628AC /* Focus+String.swift in Headers */ = {isa = PBXBuildFile; fileRef = 96E1747D1BDE973C00A628AC /* Focus+String.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		96E174A71BDE9A6900A628AC /* FocusKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 96E174A61BDE9A3800A628AC /* FocusKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		96E174A91BDE9C0000A628AC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E174A81BDE9C0000A628AC /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +36,6 @@
 		96E1747C1BDE958600A628AC /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		96E1747D1BDE973C00A628AC /* Focus+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Focus+String.swift"; sourceTree = "<group>"; };
 		96E174A61BDE9A3800A628AC /* FocusKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FocusKit.h; sourceTree = "<group>"; };
-		96E174A81BDE9C0000A628AC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +43,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96E174A91BDE9C0000A628AC /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,7 +60,6 @@
 		96E174481BDE909800A628AC = {
 			isa = PBXGroup;
 			children = (
-				96E174A81BDE9C0000A628AC /* UIKit.framework */,
 				96E1746C1BDE90EC00A628AC /* Source */,
 				96E174711BDE90F600A628AC /* Tests */,
 				96E174531BDE909800A628AC /* Products */,
