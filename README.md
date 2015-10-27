@@ -55,6 +55,10 @@ class NoteView: TextDelegate, TextViewDelegate {
 	func textDidProcessEdit(text: Text, textStorage: TextStorage, string: String, result: NSTextCheckingResult?, flags: NSMatchingFlags, stop: UnsafeMutablePointer<ObjCBool>) {
 		textStorage.addAttribute(NSFontAttributeName, value: UIFont.boldSystemFontOfSize(16), range: result!.range)
 	}
+
+	// ...
+
+}
 ```
 
 ### License
