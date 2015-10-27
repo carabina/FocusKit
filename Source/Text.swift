@@ -25,7 +25,7 @@ public protocol TextDelegate {
 }
 
 @objc(Text)
-public class Text: NSObject {
+public class Text {
 	/**
 		:name:	pattern
 	*/
@@ -38,7 +38,7 @@ public class Text: NSObject {
 	/**
 		:name:	textStorage
 	*/
-	public let textStorage: TextStorage
+	public private(set) lazy let textStorage: TextStorage = TextStorage()
 	
 	/**
 		:name:	delegate
@@ -49,7 +49,6 @@ public class Text: NSObject {
 		:name:	init
 	*/
 	public override init() {
-		textStorage = TextStorage()
 		super.init()
 		textStorage.expression = try? NSRegularExpression(pattern: pattern, options: [])
 		textStorage.textWillProcessEdit = { (textStorage: TextStorage, string: String, range: NSRange) -> Void in
