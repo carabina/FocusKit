@@ -25,7 +25,7 @@ public protocol TextDelegate {
 }
 
 @objc(Text)
-public class Text {
+public class Text : NSObject {
 	/**
 		:name:	pattern
 	*/
@@ -38,7 +38,7 @@ public class Text {
 	/**
 		:name:	textStorage
 	*/
-	public private(set) lazy let textStorage: TextStorage = TextStorage()
+	public private(set) var textStorage: TextStorage = TextStorage()
 	
 	/**
 		:name:	delegate
@@ -71,7 +71,7 @@ public class Text {
 	*/
 	public var matches: Array<String> {
 		return textStorage.expression!.matchesInString(string, options: [], range: NSMakeRange(0, string.utf16.count)).map {
-			(self.string as NSString).substringWithRange($0.range).trim()
+			(self.string as NSString).substringWithRange($0.range).stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
 		}
 	}
 	

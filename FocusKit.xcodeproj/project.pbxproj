@@ -7,14 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65FA2F171BDF1D5300B6C5C5 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FA2F161BDF1D5300B6C5C5 /* Text.swift */; };
+		65FA2F191BDF1D7C00B6C5C5 /* TextStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FA2F181BDF1D7C00B6C5C5 /* TextStorage.swift */; };
 		9606E1E11BDEAE440013EA82 /* FocusKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 9606E1E01BDEAE440013EA82 /* FocusKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9606E1E31BDF052A0013EA82 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9606E1E21BDF052A0013EA82 /* TextView.swift */; };
 		9606E1E61BDF09560013EA82 /* TextView.swift in Headers */ = {isa = PBXBuildFile; fileRef = 9606E1E21BDF052A0013EA82 /* TextView.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		96E1745D1BDE909800A628AC /* FocusKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E174521BDE909800A628AC /* FocusKit.framework */; };
 		96E174741BDE90F600A628AC /* FocusKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E174721BDE90F600A628AC /* FocusKitTests.swift */; };
-		96E1747F1BDE99A000A628AC /* Text.swift in Headers */ = {isa = PBXBuildFile; fileRef = 96E174781BDE919400A628AC /* Text.swift */; settings = {ATTRIBUTES = (Public, ); }; };
-		96E174801BDE99A000A628AC /* TextStorage.swift in Headers */ = {isa = PBXBuildFile; fileRef = 96E1747A1BDE927900A628AC /* TextStorage.swift */; settings = {ATTRIBUTES = (Public, ); }; };
-		96E174811BDE99A000A628AC /* Focus+String.swift in Headers */ = {isa = PBXBuildFile; fileRef = 96E1747D1BDE973C00A628AC /* Focus+String.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +27,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		65FA2F161BDF1D5300B6C5C5 /* Text.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
+		65FA2F181BDF1D7C00B6C5C5 /* TextStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextStorage.swift; sourceTree = "<group>"; };
 		9606E1E01BDEAE440013EA82 /* FocusKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FocusKit.h; sourceTree = "<group>"; };
 		9606E1E21BDF052A0013EA82 /* TextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		96E174521BDE909800A628AC /* FocusKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FocusKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -35,10 +36,7 @@
 		96E1746E1BDE90EC00A628AC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96E174721BDE90F600A628AC /* FocusKitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusKitTests.swift; sourceTree = "<group>"; };
 		96E174731BDE90F600A628AC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		96E174781BDE919400A628AC /* Text.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
-		96E1747A1BDE927900A628AC /* TextStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextStorage.swift; sourceTree = "<group>"; };
 		96E1747C1BDE958600A628AC /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		96E1747D1BDE973C00A628AC /* Focus+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Focus+String.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,19 +61,11 @@
 		9606E1E41BDF06FA0013EA82 /* Text */ = {
 			isa = PBXGroup;
 			children = (
-				96E174781BDE919400A628AC /* Text.swift */,
-				96E1747A1BDE927900A628AC /* TextStorage.swift */,
+				65FA2F161BDF1D5300B6C5C5 /* Text.swift */,
+				65FA2F181BDF1D7C00B6C5C5 /* TextStorage.swift */,
 				9606E1E21BDF052A0013EA82 /* TextView.swift */,
 			);
 			name = Text;
-			sourceTree = "<group>";
-		};
-		9606E1E51BDF070D0013EA82 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				96E1747D1BDE973C00A628AC /* Focus+String.swift */,
-			);
-			name = Extensions;
 			sourceTree = "<group>";
 		};
 		96E174481BDE909800A628AC = {
@@ -102,7 +92,6 @@
 				96E1747C1BDE958600A628AC /* LICENSE */,
 				96E174771BDE911300A628AC /* Supporting Files */,
 				9606E1E01BDEAE440013EA82 /* FocusKit.h */,
-				9606E1E51BDF070D0013EA82 /* Extensions */,
 				9606E1E41BDF06FA0013EA82 /* Text */,
 			);
 			path = Source;
@@ -141,9 +130,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9606E1E11BDEAE440013EA82 /* FocusKit.h in Headers */,
-				96E1747F1BDE99A000A628AC /* Text.swift in Headers */,
-				96E174801BDE99A000A628AC /* TextStorage.swift in Headers */,
-				96E174811BDE99A000A628AC /* Focus+String.swift in Headers */,
 				9606E1E61BDF09560013EA82 /* TextView.swift in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -245,6 +231,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65FA2F171BDF1D5300B6C5C5 /* Text.swift in Sources */,
+				65FA2F191BDF1D7C00B6C5C5 /* TextStorage.swift in Sources */,
 				9606E1E31BDF052A0013EA82 /* TextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
